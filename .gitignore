@@ -39,3 +39,26 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Referencia del diseño de Figma Make
+_referencia-figma/
+
+# env example (se versiona)
+!.env.example
+
+# supabase CLI (local)
+supabase/.temp/
+
+# referencia de diseño
+/multimax-figma/
+
+# editor / SO
+.vscode/*
+!.vscode/extensions.json
+.idea/
+Thumbs.db
+*.log
+
+# tests
+/playwright-report/
+/test-results/
