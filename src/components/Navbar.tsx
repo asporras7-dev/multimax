@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { Icon } from './Icon';
 
-const LOGO = '/images/multimax-logo.png';
+const LOGO = '/images/LogoMultimaxFondoTransparente.png';
 const navItems: [string, string][] = [["Inicio", "#inicio"], ["Pacas", "#categorias"], ["Unidades", "#categorias"], ["Marcas", "#marcas"], ["Nosotros", "#nosotros"], ["Contacto", "#contacto"]];
 export default function Navbar() {
   const [open, setOpen] = useState(false);
