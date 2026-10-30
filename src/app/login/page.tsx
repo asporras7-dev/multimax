@@ -3,7 +3,6 @@ import { createClient } from '@/lib/supabase/server'
 import { LoginForm } from './login-form'
 
 export const metadata = { robots: { index: false, follow: false } }
-export const instant = false
 
 export default async function LoginPage({
   searchParams,

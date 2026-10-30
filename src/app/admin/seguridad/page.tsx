@@ -2,10 +2,7 @@ import { connection } from 'next/server'
 import { requireAdmin } from '@/lib/auth'
 import { EnrollMfa } from './enroll-mfa'
 
-export const instant = false
-
 export default async function Seguridad() {
-  await connection()
   await requireAdmin({ allowEnrollment: true })
   return (
     <div className="max-w-md">

@@ -9,7 +9,6 @@ const securityHeaders = [
 ]
 
 const nextConfig: NextConfig = {
-  /* config options here */
   async headers() {
     return [
       { source: '/admin/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
@@ -17,8 +16,6 @@ const nextConfig: NextConfig = {
       { source: '/(.*)', headers: securityHeaders },
     ]
   },
-  cacheComponents: true,
-  partialPrefetching: true,
   turbopack: {
     rules: {
       "*.css": {

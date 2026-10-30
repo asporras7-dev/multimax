@@ -1,10 +1,7 @@
 import { connection } from 'next/server'
 import { requireAdmin } from '@/lib/auth'
 
-export const instant = false
-
 export default async function AdminHome() {
-  await connection()
   await requireAdmin()
 
   return (

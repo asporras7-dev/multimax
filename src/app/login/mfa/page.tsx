@@ -3,7 +3,6 @@ import { createClient } from '@/lib/supabase/server'
 import { MfaForm } from './mfa-form'
 
 export const metadata = { robots: { index: false, follow: false } }
-export const instant = false
 
 export default async function MfaPage() {
   const supabase = await createClient()
