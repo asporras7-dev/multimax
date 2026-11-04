@@ -1,0 +1,33 @@
+ next.config.ts                                     |  20 [32m+[m[31m-[m
+ package-lock.json                                  | 470 [32m+++[m[31m------------------[m
+ package.json                                       |  10 [32m+[m[31m-[m
+ public/images/logoMultimaxFondoTransparente.png    | Bin [31m1803548[m -> [32m0[m bytes
+ src/app/admin/layout.tsx                           |  26 [31m--[m
+ src/app/admin/logout-button.tsx                    |  20 [31m-[m
+ src/app/admin/page.tsx                             |  13 [31m-[m
+ src/app/admin/seguridad/enroll-mfa.tsx             |  75 [31m----[m
+ src/app/admin/seguridad/page.tsx                   |  16 [31m-[m
+ src/app/login/actions.ts                           |  35 [31m--[m
+ src/app/login/login-form.tsx                       |  56 [31m---[m
+ src/app/login/mfa/mfa-form.tsx                     |  74 [31m----[m
+ src/app/login/mfa/page.tsx                         |  25 [31m--[m
+ src/app/login/page.tsx                             |  27 [31m--[m
+ src/components/Navbar.tsx                          |   2 [32m+[m[31m-[m
+ src/lib/auth.ts                                    |  25 [31m--[m
+ .../migrations/20261017155652_catalogo.sql         |   0
+ .../20261017160532_perfiles_y_seguridad.sql        |   0
+ src/lib/supabase/proxy.ts                          |  32 [31m--[m
+ {supabase copy => src/lib/supabase}/seed.sql       |   0
+ src/lib/supabase/server.ts                         |   3 [32m+[m[31m-[m
+ src/proxy.ts                                       |  10 [31m-[m
+ supabase copy/.temp/cli-latest                     |   1 [31m-[m
+ supabase copy/.temp/linked-project.json            |   1 [31m-[m
+ .../migrations/20261018004759_exigir_2fa_admin.sql |   0
+ supabase/.gitignore                                |   8 [31m-[m
+ supabase/config.toml                               | 415 [31m------------------[m
+ supabase/migrations/20261017155652_catalogo.sql    |  97 [31m-----[m
+ .../20261017160532_perfiles_y_seguridad.sql        |  75 [31m----[m
+ .../migrations/20261018004759_exigir_2fa_admin.sql |   6 [31m-[m
+ .../20261024215751_endurecer_permisos.sql          |   5 [31m-[m
+ supabase/seed.sql                                  |  14 [31m-[m
+ 32 files changed, 64 insertions(+), 1497 deletions(-)
