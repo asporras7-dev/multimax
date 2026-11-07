@@ -7,6 +7,7 @@ import { Icon } from './Icon';
 const LOGO = '/images/LogoMultimaxFondoTransparente.png';
 const navItems: [string, string][] = [["Inicio", "#inicio"], ["Pacas", "#categorias"], ["Unidades", "#categorias"], ["Marcas", "#marcas"], ["Nosotros", "#nosotros"], ["Contacto", "#contacto"]];
 export default function Navbar() {
+  const x: number = "hola"
   const [open, setOpen] = useState(false);
   return (
     <header className="navbar">
