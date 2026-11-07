@@ -9,18 +9,12 @@ export function MfaForm() {
   const [error, setError] = useState('')
 
   useEffect(() => {
-    setCode('')
-    setError('')
-    const supabase = createClient()
+  const supabase = createClient()
     supabase.auth.mfa.listFactors().then(({ data }) => {
-      const ids = data?.totp?.map((f) => f.id) ?? []
-      if (ids.length) setFactorIds(ids)
+      const ids = data?.totp?.map((f) => f.id) ?? []  
+    if (ids.length) setFactorIds(ids)
       else window.location.assign('/admin/seguridad')
     })
-    return () => {
-      setCode('')
-      setError('')
-    }
   }, [])
 
   async function verificar(e: React.FormEvent) {
